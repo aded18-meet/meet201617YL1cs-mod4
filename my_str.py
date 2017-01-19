@@ -17,10 +17,11 @@ class Mystr(str): #<-----Replace xyz-make a new class, MyStr, that inherits from
 
     def replace(self, take_out, use_this):
         
-       
-        
+       test=self.lower()
+       return test.repalce(take_out.lower,use_this);
                 
-        """
+                
+    """
         Override the replace method of string.
         The new replace method is case-insensitive,
         and the output will always be lower-case.
@@ -53,6 +54,5 @@ class Mystr(str): #<-----Replace xyz-make a new class, MyStr, that inherits from
         #       do this in as little as 1 line.
         #YOUR CODE BELOW:
         #################
-        str_lower_case=self.lower()
-        final_str=str_lower_case.replace(take_out.lower(),use_this)
+        
         
